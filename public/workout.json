@@ -1,0 +1,208 @@
+[
+  {
+    "day": "Monday",
+    "exercises": [
+      {
+        "name": "remada na maquina",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "back"
+      },
+      {
+        "name": "puxada alta",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "back"
+      },
+      {
+        "name": "Remada cavalinho",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "back"
+      },
+      {
+        "name": "Remada curvada",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "back"
+      },
+      {
+        "name": "Spider curls",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "biceps"
+      },
+      {
+        "name": "Rosca banco 45",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "biceps"
+      },
+      {
+        "name": "Rosca banco scott (maquina)",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "biceps"
+      },
+      {
+        "name": "Rosca Alternada",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "biceps"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "exercises": [
+      {
+        "name": "Supino reto (alter)",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "chest"
+      },
+      {
+        "name": "Supino inclinado (alter)",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "chest"
+      },
+      {
+        "name": "Supino declinado (alter)",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "chest"
+      },
+      {
+        "name": "Pack deck ou cross over",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "chest"
+      },
+      {
+        "name": "Triceps frances ou skull crusher",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "triceps"
+      },
+      {
+        "name": "Triceps corda",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "triceps"
+      },
+      {
+        "name": "Triceps polia (barra)",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "triceps"
+      },
+      {
+        "name": "Triceps maquina",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "triceps"
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "exercises": [
+      {
+        "name": "Agachamento livre",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Leg press 45",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Cadeira extensora",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Cadeira flexora",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Mesa flexora",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Cadeira adutora",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Cadeira abdutora",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "muscle": "shoulders",
+        "name": "Elevação lateral",
+        "repetitions": 10,
+        "series": 4
+      },
+      {
+        "muscle": "shoulders",
+        "name": "Elevação frontal",
+        "repetitions": 10,
+        "series": 4
+      },
+      {
+        "muscle": "shoulders",
+        "name": "Shoulder press (maquina de empurrar o ombro para cima)",
+        "repetitions": 10,
+        "series": 4
+      },
+      {
+        "muscle": "shoulders",
+        "name": "Voos (elevações posteriores) com Halteres em Inclinação",
+        "repetitions": 10,
+        "series": 4
+      }
+    ]
+  },
+  {
+    "day": "repeat",
+    "exercises": [
+      {
+        "name": "Panturrilha sentado",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Panturrilha pé",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Trapézio encolhimento",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      },
+      {
+        "name": "Abdominal",
+        "series": 4,
+        "repetitions": 10,
+        "muscle": "legs"
+      }
+    ]
+  }
+]
