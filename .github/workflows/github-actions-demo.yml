@@ -2,6 +2,14 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - name: Before Script
+        run: yarn install --frozen-lockfile
+      - name: Run Lint
+        run: yarn run lint"
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
