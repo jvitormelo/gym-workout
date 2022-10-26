@@ -6,11 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     container: node:14
     steps:
+      - uses: actions/checkout@v3
       - name: Before Script
-        working-directory: ./
         run: yarn install --frozen-lockfile
       - name: Run Lint
-        working-directory: ./
         run: yarn run lint
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
