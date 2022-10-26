@@ -7,10 +7,10 @@ jobs:
     container: node:14
     steps:
       - name: Before Script
-        working-directory: ./app
+        working-directory: ./
         run: yarn install --frozen-lockfile
       - name: Run Lint
-        working-directory: ./app
+        working-directory: ./
         run: yarn run lint
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
