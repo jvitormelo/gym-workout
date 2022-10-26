@@ -7,9 +7,11 @@ jobs:
     container: node:14
     steps:
       - name: Before Script
-        run: cd ../../ && yarn install --frozen-lockfile
+        working-directory: ./app
+        run: yarn install --frozen-lockfile
       - name: Run Lint
-        run: cd ../../ yarn run lint
+        working-directory: ./app
+        run: yarn run lint
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
