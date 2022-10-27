@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.base_ref }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  BRANCH: ${{ github.base_ref }}
+  BRANCH: dev
 jobs:
   Lint:
     runs-on: ubuntu-latest
