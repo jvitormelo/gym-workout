@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     # environment: github.base_ref
     steps:
-      - run: "echo  Branch: ${{ github.base_ref }}"
+      - run: "echo  Branch: $GITHUB_BASE_REF"
