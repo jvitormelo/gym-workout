@@ -17,4 +17,4 @@ jobs:
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
-      - run: "echo TESTE $TESTE"
+      - run: echo TESTE $TESTE
