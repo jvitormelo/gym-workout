@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.base_ref }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   pull_request:
     types:
@@ -19,7 +19,7 @@ jobs:
   #       run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: ${{ github.base_ref }}
+    environment: ${{ github.actor }}
 
     env:
       TESTE: ${{ secrets.TESTE }}
