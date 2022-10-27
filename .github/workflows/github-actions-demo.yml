@@ -1,8 +1,8 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.base_ref }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  BRANCH: ${{ github.actor }}
+  BRANCH: ${{ github.base_ref }}
 jobs:
   Lint:
     runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ jobs:
         run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: $BRANCH
+    environment: github.base_ref
     steps:
       - run: "echo $BRANCH"
