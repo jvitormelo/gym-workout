@@ -24,4 +24,4 @@ jobs:
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
-      - run: echo Valor $TESTE
+      - run: echo Valor ${{ github.event.pull_request.base.ref }}
