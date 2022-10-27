@@ -19,7 +19,7 @@ jobs:
   #       run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: ${{ github.ref }}
+    environment: ${{ github.event.pull_request.base.ref }}
 
     env:
       TESTE: ${{ secrets.TESTE }}
