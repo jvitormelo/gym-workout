@@ -4,7 +4,6 @@ on:
   pull_request:
     types:
       - "opened"
-      - "reopened"
     branches:
       - dev
 jobs:
@@ -19,9 +18,9 @@ jobs:
   #       run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: ${{ github.event.pull_request.base.ref }}
+    environment: ${{ github.base_ref }}
 
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
-      - run: echo Valor ${{ github.event.pull_request.base.ref }}
+      - run: echo Valor ${{ github.base_ref }}
