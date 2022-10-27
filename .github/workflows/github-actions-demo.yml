@@ -15,6 +15,6 @@ jobs:
         run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: production
+    environment: dev
     steps:
       - run: "echo $TESTE"
