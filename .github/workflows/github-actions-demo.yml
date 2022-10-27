@@ -29,6 +29,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Test:
     runs-on: ubuntu-latest
-    environment: production
+    environment: github.base_ref
     steps:
       - run: "echo $TESTE"
