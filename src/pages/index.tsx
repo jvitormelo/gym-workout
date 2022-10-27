@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     (workout) => workout.day.toLowerCase() === day
   );
   return (
-    <div className="flex flex-col items-center p-4 py-8 h-screen">
+    <div className="flex flex-col items-center gap-4 p-4 py-8 h-screen">
       <Select
         onChange={setDay}
         value={day}
@@ -40,19 +40,19 @@ const Home: NextPage = () => {
       />
 
       <ol className="mt-4 flex flex-col gap-4">
-        {workoutTrain?.exercises.map((exercice) => (
+        {workoutTrain?.exercises.map((exercise) => (
           <li
-            key={exercice.name}
+            key={exercise.name}
             className="dark:text-white border-2 border-yellow-100 p-3 rounded-md"
           >
-            <h2>{exercice.name}</h2>
+            <h2>{exercise.name}</h2>
 
             <p>
-              {exercice.series} x {exercice.repetitions}
+              {exercise.series} x {exercise.repetitions}
             </p>
 
             <div className="px-3 py-1 w-fit mt-2 rounded-lg bg-slate-500">
-              {exercice.muscle}
+              {exercise.muscle}
             </div>
           </li>
         ))}

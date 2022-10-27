@@ -1,0 +1,34 @@
+[
+  {
+    "time": "8:00AM",
+    "action": "wake up and do rope skipping"
+  },
+  {
+    "time": "8:15AM",
+    "action": "eat breakfast"
+  },
+  {
+    "time": "11:30AM",
+    "action": "eat lunch"
+  },
+  {
+    "time": "3:30PM",
+    "action": "drink Whey with milk"
+  },
+  {
+    "time": "5:30PM",
+    "action": "Eat 3 eggs and 2 slices of toast (protein and carbs) and drink pre-workout"
+  },
+  {
+    "time": "6:30PM",
+    "action": "Workout"
+  },
+  {
+    "time": "9:00PM",
+    "action": "Drink creatine (2 scoops) and eat dinner (carbs + protein) rice and chicken"
+  },
+  {
+    "time": "11:00PM",
+    "action": "Drink whey with milk"
+  }
+]
