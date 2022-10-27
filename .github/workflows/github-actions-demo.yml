@@ -6,6 +6,7 @@ on:
       - "opened"
     branches:
       - dev
+      - main
 jobs:
   # Lint:
   #   runs-on: ubuntu-latest
