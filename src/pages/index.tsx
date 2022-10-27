@@ -1,4 +1,5 @@
 import { Select } from "@/components/Select";
+import { useAskNotification } from "@/hooks/useAskNotification";
 import type { NextPage } from "next";
 import Workout from "public/workout.json";
 import { useState } from "react";
@@ -24,6 +25,7 @@ const getCurrentDay = () => {
 };
 
 const Home: NextPage = () => {
+  const { isGranted } = useAskNotification();
   const [day, setDay] = useState(getCurrentDay());
 
   const workoutTrain = Workout.find(
@@ -38,6 +40,10 @@ const Home: NextPage = () => {
         label="Gym days"
         options={gymDays}
       />
+
+      {!isGranted && (
+        <p className="text-red-500 text-xl">Please allow notifications</p>
+      )}
 
       <ol className="mt-4 flex flex-col gap-4">
         {workoutTrain?.exercises.map((exercise) => (

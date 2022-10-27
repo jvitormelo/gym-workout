@@ -1,10 +1,10 @@
-import { useNotification } from "@/hooks/useNotification";
+import { useAskNotification } from "@/hooks/useAskNotification";
 import { useState } from "react";
 
 const seconds = 2;
 
 export const Timer = () => {
-  const { sendNotification } = useNotification();
+  const { sendNotification } = useAskNotification();
   const [time, setTime] = useState(0);
 
   const startTime = () => {
