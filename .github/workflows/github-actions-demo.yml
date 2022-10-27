@@ -13,7 +13,7 @@ jobs:
   #       run: yarn run lint
   Test:
     runs-on: ubuntu-latest
-    environment: $GITHUB_BASE_REF
+    environment: dev
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
