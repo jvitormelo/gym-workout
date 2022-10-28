@@ -1,4 +1,5 @@
 import { Select } from "@/components/Select";
+import { Timer } from "@/components/Timer";
 import { useAskNotification } from "@/hooks/useAskNotification";
 import type { NextPage } from "next";
 import Workout from "public/workout.json";
@@ -40,6 +41,8 @@ const Home: NextPage = () => {
         label="Gym days"
         options={gymDays}
       />
+
+      <Timer />
 
       {!isGranted && (
         <p className="text-red-500 text-xl">Please allow notifications</p>
