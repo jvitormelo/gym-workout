@@ -9,14 +9,23 @@ const vibrate = (duration: number | number[]) => {
 };
 
 const sendNotification = ({ title, ...options }: SendNotificationParams) => {
-  new Notification(title, options);
+  try {
+    if (Notification.permission === "granted") {
+      new Notification(title, options);
+    }
+  } catch (e) {
+    console.error(e);
+  }
 };
 
 export const notifyUser = (action: string) => {
-  window.focus();
   sendNotification({
     title: action,
   });
+
+  if (window.focus) window.focus();
+
   vibrate([3000, 2000]);
-  window.alert(action);
+
+  if (window.alert) window.alert(action);
 };
