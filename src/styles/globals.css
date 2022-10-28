@@ -5,3 +5,39 @@
 body {
   @apply dark:bg-gray-900;
 }
+
+.myclass-appear {
+  opacity: 0;
+}
+
+.myclass-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+/* === Enter Transition === */
+.myclass-enter {
+  opacity: 0;
+}
+
+.myclass-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.myclass-enter-done {
+  opacity: 1;
+}
+/* === Exit Transition === */
+.myclass-exit {
+  opacity: 0;
+}
+
+.myclass-exit-active {
+  opacity: 0.5;
+  transition: opacity 1000ms;
+}
+
+.myclass-exit-done {
+  opacity: 1;
+}
