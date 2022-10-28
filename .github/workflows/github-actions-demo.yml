@@ -1,16 +1,16 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  push:
-    branches:
-      - "dev"
-      - "main"
-  # pull_request:
-  #   types:
-  #     - "opened"
+  # push:
   #   branches:
-  #     - dev
-  #     - main
+  #     - "dev"
+  #     - "main"
+  pull_request:
+    types:
+      - "closed"
+    branches:
+      - dev
+      - main
 jobs:
   # Lint:
   #   runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     environment: ${{ github.base_ref }}
-
+    if: ${{ github.event.pull_request.merged }}
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
