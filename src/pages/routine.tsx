@@ -1,5 +1,5 @@
 import { notifyUser } from "@/utils/notifyUser";
-// import RoutineData from "public/routine.json";
+import RoutineData from "public/routine.json";
 import { useEffect, useState } from "react";
 
 type RoutineItem = {
@@ -13,16 +13,16 @@ const getCurrentTime = () => {
   return `${hours}:${minutes}`;
 };
 
-const generateMockedRoutine = () => {
-  const actions = ["Wake up", "Brush teeth", "Walk with the dogo", "Sleep"];
+// const generateMockedRoutine = () => {
+//   const actions = ["Wake up", "Brush teeth", "Walk with the dogo", "Sleep"];
 
-  const [hours, minutes] = getCurrentTime().split(":");
+//   const [hours, minutes] = getCurrentTime().split(":");
 
-  return actions.map((action, index) => {
-    const time = `${hours}:${+minutes + index + 1}`;
-    return { time, action };
-  });
-};
+//   return actions.map((action, index) => {
+//     const time = `${hours}:${+minutes + index + 1}`;
+//     return { time, action };
+//   });
+// };
 
 const hasTimeExpired = (time: string) => {
   const [hours, minutes] = time.split(":");
@@ -66,7 +66,7 @@ const getMinutesToNextTask = (taskNotDone: RoutineItem) => {
 
 const Routine = () => {
   const [routine, setRoutine] = useState(
-    generateMockedRoutine().map((routine) => {
+    RoutineData.map((routine) => {
       return { ...routine, isDone: hasTimeExpired(routine.time) };
     })
   );
