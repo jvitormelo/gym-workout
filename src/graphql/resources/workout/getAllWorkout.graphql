@@ -1,0 +1,6 @@
+query GetAllTestModel {
+  demoModels {
+    id
+    title
+  }
+}
