@@ -38,6 +38,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex flex-col items-center gap-4 p-4 py-8 h-screen">
+      <span className="text-white text-xl">LELE do cagado</span>
       <span className="text-white text-xl">{data?.workouts[0]?.title}</span>
       <Select
         onChange={setDay}
