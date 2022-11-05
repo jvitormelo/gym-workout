@@ -13,11 +13,12 @@ export const Timer = () => {
       setTime((prevTime) => {
         const newValue = prevTime - 1;
 
-        if (newValue === 0) {
+        if (newValue <= 0) {
           navigator.vibrate([3000, 2000]);
 
           notifyUser("Time is up! Time to move on!");
           clearInterval(interVal);
+          return newValue;
         }
         return newValue;
       });
@@ -35,6 +36,7 @@ export const Timer = () => {
             Seconds
           </label>
           <input
+            data-testid="timer-input"
             disabled={time > 0}
             type="number"
             id="small-input"
@@ -44,12 +46,13 @@ export const Timer = () => {
           />
         </div>
         <button
+          data-testid="start-button"
           disabled={time > 0}
           onClick={startTime}
           className="bg-blue-500 min-w-3 hover:bg-blue-700 text-white font-bold py-2 h-fit px-4 rounded"
         >
           <CSSTransition timeout={1000} classNames="myclass" in={time > 0}>
-            <span>{time ? time : "Start"}</span>
+            <span>{time > 0 ? time : "Start"}</span>
           </CSSTransition>
         </button>
       </div>

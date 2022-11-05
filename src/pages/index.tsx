@@ -1,5 +1,5 @@
-import { Select } from "@/components/Select";
-import { Timer } from "@/components/Timer";
+import { Select } from "@/components/select";
+import { Timer } from "@/components/timer";
 import { useGetAllWorkoutsQuery } from "@/graphql/generated";
 import { useAskNotification } from "@/hooks/useAskNotification";
 import type { NextPage } from "next";
