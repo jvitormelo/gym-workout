@@ -32,8 +32,6 @@ const Home: NextPage = () => {
 
   const { data } = useGetAllWorkoutsQuery();
 
-  console.log(data);
-
   const workoutTrain = Workout.find(
     (workout) => workout.day.toLowerCase() === day
   );

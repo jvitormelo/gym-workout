@@ -1,0 +1,8 @@
+query GetAllExercises {
+  exercises {
+    id
+    name
+    repetitions
+    series
+  }
+}

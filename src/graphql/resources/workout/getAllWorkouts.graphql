@@ -4,7 +4,7 @@ query GetAllWorkouts {
     title
     workoutDays {
       day
-      exercices {
+      exercises {
         id
         name
         repetitions
