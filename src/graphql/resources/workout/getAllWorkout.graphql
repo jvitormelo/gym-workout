@@ -1,6 +1,16 @@
-query GetAllTestModel {
-  demoModels {
+query GetAllWorkouts {
+  workouts {
     id
     title
+    workoutDays {
+      day
+      exercices {
+        id
+        name
+        repetitions
+        series
+        muscle
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 import { Select } from "@/components/Select";
 import { Timer } from "@/components/Timer";
-import { useGetAllTestModelQuery } from "@/graphql/generated";
+import { useGetAllWorkoutsQuery } from "@/graphql/generated";
 import { useAskNotification } from "@/hooks/useAskNotification";
 import type { NextPage } from "next";
 import Workout from "public/workout.json";
@@ -30,7 +30,9 @@ const Home: NextPage = () => {
   const { isGranted } = useAskNotification();
   const [day, setDay] = useState(getCurrentDay());
 
-  const { data } = useGetAllTestModelQuery();
+  const { data } = useGetAllWorkoutsQuery();
+
+  console.log(data);
 
   const workoutTrain = Workout.find(
     (workout) => workout.day.toLowerCase() === day
@@ -38,7 +40,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex flex-col items-center gap-4 p-4 py-8 h-screen">
-      <span className="text-white text-xl">{data?.demoModels?.[0].title}</span>
+      <span className="text-white text-xl">{data?.workouts[0]?.title}</span>
       <Select
         onChange={setDay}
         value={day}
