@@ -28,7 +28,7 @@ jobs:
     env:
       TESTE: ${{ secrets.TESTE }}
     steps:
-      - run: echo Valor ${{ github.base_ref }}
+      - run: echo Valor1 ${{ github.base_ref }}
   Deploy:
     runs-on: ubuntu-latest
     environment: ${{ github.base_ref }}
