@@ -33,7 +33,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{ github.base_ref }}
     if: ${{ github.event.pull_request.merged }}
-    shell: bash
     env:
       BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
     steps:
