@@ -29,3 +29,11 @@ jobs:
       TESTE: ${{ secrets.TESTE }}
     steps:
       - run: echo Valor ${{ github.base_ref }}
+  Deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.base_ref }}
+    if: ${{ github.event.pull_request.merged }}
+    env:
+      BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+    steps:
+      - run: echo ${{ env.BUCKET_NAME }}
